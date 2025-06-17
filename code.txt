@@ -1,0 +1,289 @@
+{
+  "danfe_identificacao": {
+    "tipo_documento": "DANFE DOCUMENTO AUXILIAR DA NOTA FISCAL ELETRÔNICA",
+    "tipo_operacao_codigo": 1,
+    "tipo_operacao_descricao": "SAÍDA",
+    "numero": "000765969",
+    "serie": "4",
+    "folha": "01/02",
+    "chave_acesso": "3325 0416 5902 3400 6450 5500 4000 7659 6919 3407 7250",
+    "consulta_autenticidade": "www.nfe.fazenda.gov.br/portal ou no site da Sefaz Autorizada",
+    "protocolo_autorizacao_uso": "233250146001808 17/04/2025 07:05:33 PM"
+  },
+  "emitente": {
+    "nome_razao_social": "AZZAS 21S4 S.A",
+    "endereco_completo": "AV ARTHUR ANTONIO SENDAS, 999 GALPAO 3MS - PARQUE JURITI",
+    "municipio_uf_pais": "SAO JOAO DE MERITI/RJ - BRASIL",
+    "cep": "25585085",
+    "cnpj": "16.590.234/0064-50",
+    "inscricao_estadual": "12297378",
+    "inscricao_estadual_subst_tribut": "0991022333"
+  },
+  "destinatario_remetente": {
+    "nome_razao_social": "FABIANA N. COSTA SANTOS - CONFECCOES",
+    "cnpj_cpf": "15.080.108/0001-09",
+    "data_emissao": "17/04/2025",
+    "endereco": "AV ARAPONGAS, 632 C",
+    "bairro_distrito": "CENTRO",
+    "cep": "86700050",
+    "data_entrada_saida": "17/04/2025",
+    "municipio": "ARAPONGAS",
+    "uf": "PR",
+    "fone_fax": null,
+    "inscricao_estadual": "9058688379",
+    "hora_saida": null
+  },
+  "natureza_operacao": "VENDA DE MERCADORIA ADQUIRIDA OU RECEBID",
+  "faturas_duplicatas": [
+    {
+      "numero": "001",
+      "data_vencimento": "16/06/2025",
+      "valor": 397.00
+    },
+    {
+      "numero": "002",
+      "data_vencimento": "16/07/2025",
+      "valor": 397.00
+    },
+    {
+      "numero": "003",
+      "data_vencimento": "15/08/2025",
+      "valor": 397.00
+    },
+    {
+      "numero": "004",
+      "data_vencimento": "14/09/2025",
+      "valor": 397.50
+    }
+  ],
+  "calculo_imposto": {
+    "base_calculo_icms": 1588.50,
+    "valor_icms": 190.57,
+    "base_calculo_icms_st": 0.00,
+    "valor_icms_substituicao": 0.00,
+    "valor_total_produtos": 1765.00,
+    "valor_frete": 0.00,
+    "valor_seguro": 0.00,
+    "desconto": 176.50,
+    "outras_despesas_acessorias": 0.00,
+    "valor_total_ipi": 0.00,
+    "valor_total_nota": 1588.50
+  },
+  "transportador_volumes_transportados": {
+    "nome_razao_social": "MERIDIONAL",
+    "frete_por_conta": "0 - Emitente",
+    "codigo_antt": null,
+    "placa_veiculo": null,
+    "uf_veiculo": null,
+    "cnpj_cpf": "23.864.838/0001-29",
+    "endereco": "R DOIS",
+    "municipio": "CONTAGEM",
+    "uf": "MG",
+    "inscricao_estadual": "1866087360193",
+    "volumes": [
+      {
+        "quantidade": 1,
+        "especie": "CAIXA DE PAPELÃO",
+        "marca": null,
+        "numero": null,
+        "peso_bruto": 5.800,
+        "peso_liquido": 5.800
+      }
+    ]
+  },
+  "dados_produtos_servicos": [
+    {
+      "codigo": "009402432904",
+      "descricao": "CAMISETA MINI BASICA PATCH PREMIUM",
+      "ncm_sh": "61091000",
+      "cst": "000",
+      "cfop": "6102",
+      "unid": "UN",
+      "quant": 1,
+      "valor_unitario": 49.00,
+      "valor_total": 49.00,
+      "b_calc_icms": 44.10,
+      "valor_icms": 5.29,
+      "valor_ipi": 0.00,
+      "aliquotas": {
+        "icms": 12.000,
+        "ipi": 0.000
+      }
+    },
+    {
+      "codigo": "009402432906",
+      "descricao": "CAMISETA MINI BASICA PATCH PREMIUM",
+      "ncm_sh": "61091000",
+      "cst": "000",
+      "cfop": "6102",
+      "unid": "UN",
+      "quant": 1,
+      "valor_unitario": 49.00,
+      "valor_total": 49.00,
+      "b_calc_icms": 44.10,
+      "valor_icms": 5.29,
+      "valor_ipi": 0.00,
+      "aliquotas": {
+        "icms": 12.000,
+        "ipi": 0.000
+      }
+    },
+    {
+      "codigo": "009402432908",
+      "descricao": "CAMISETA MINI BASICA PATCH PREMIUM",
+      "ncm_sh": "61091000",
+      "cst": "000",
+      "cfop": "6102",
+      "unid": "UN",
+      "quant": 1,
+      "valor_unitario": 49.00,
+      "valor_total": 49.00,
+      "b_calc_icms": 44.10,
+      "valor_icms": 5.29,
+      "valor_ipi": 0.00,
+      "aliquotas": {
+        "icms": 12.000,
+        "ipi": 0.000
+      }
+    },
+    {
+      "codigo": "009402432910",
+      "descricao": "CAMISETA MINI BASICA PATCH PREMIUM",
+      "ncm_sh": "61091000",
+      "cst": "000",
+      "cfop": "6102",
+      "unid": "UN",
+      "quant": 1,
+      "valor_unitario": 49.00,
+      "valor_total": 49.00,
+      "b_calc_icms": 44.10,
+      "valor_icms": 5.29,
+      "valor_ipi": 0.00,
+      "aliquotas": {
+        "icms": 12.000,
+        "ipi": 0.000
+      }
+    },
+    {
+      "codigo": "009402432912",
+      "descricao": "CAMISETA MINI BASICA PATCH PREMIUM",
+      "ncm_sh": "61091000",
+      "cst": "000",
+      "cfop": "6102",
+      "unid": "UN",
+      "quant": 1,
+      "valor_unitario": 49.00,
+      "valor_total": 49.00,
+      "b_calc_icms": 44.10,
+      "valor_icms": 5.29,
+      "valor_ipi": 0.00,
+      "aliquotas": {
+        "icms": 12.000,
+        "ipi": 0.000
+      }
+    },
+    {
+      "codigo": "009402432914",
+      "descricao": "CAMISETA MINI BASICA PATCH PREMIUM",
+      "ncm_sh": "61091000",
+      "cst": "000",
+      "cfop": "6102",
+      "unid": "UN",
+      "quant": 1,
+      "valor_unitario": 49.00,
+      "valor_total": 49.00,
+      "b_calc_icms": 44.10,
+      "valor_icms": 5.29,
+      "valor_ipi": 0.00,
+      "aliquotas": {
+        "icms": 12.000,
+        "ipi": 0.000
+      }
+    },
+    {
+      "codigo": "009402432916",
+      "descricao": "CAMISETA MINI BASICA PATCH PREMIUM",
+      "ncm_sh": "61091000",
+      "cst": "000",
+      "cfop": "6102",
+      "unid": "UN",
+      "quant": 1,
+      "valor_unitario": 49.00,
+      "valor_total": 49.00,
+      "b_calc_icms": 44.10,
+      "valor_icms": 5.29,
+      "valor_ipi": 0.00,
+      "aliquotas": {
+        "icms": 12.000,
+        "ipi": 0.000
+      }
+    },
+    {
+      "codigo": "009402432918",
+      "descricao": "CAMISETA MINI BASICA PATCH PREMIUM",
+      "ncm_sh": "61091000",
+      "cst": "000",
+      "cfop": "6102",
+      "unid": "UN",
+      "quant": 1,
+      "valor_unitario": 49.00,
+      "valor_total": 49.00,
+      "b_calc_icms": 44.10,
+      "valor_icms": 5.29,
+      "valor_ipi": 0.00,
+      "aliquotas": {
+        "icms": 12.000,
+        "ipi": 0.000
+      }
+    },
+    {
+      "codigo": "009402439604",
+      "descricao": "CAMISETA MINI BASICA PATCH PREMIUM",
+      "ncm_sh": "61091000",
+      "cst": "000",
+      "cfop": "6102",
+      "unid": "UN",
+      "quant": 1,
+      "valor_unitario": 49.00,
+      "valor_total": 49.00,
+      "b_calc_icms": 44.10,
+      "valor_icms": 5.29,
+      "valor_ipi": 0.00,
+      "aliquotas": {
+        "icms": 12.000,
+        "ipi": 0.000
+      }
+    },
+    {
+      "codigo": "009402439606",
+      "descricao": "CAMISETA MINI BASICA PATCH PREMIUM",
+      "ncm_sh": "61091000",
+      "cst": "000",
+      "cfop": "6102",
+      "unid": "UN",
+      "quant": 1,
+      "valor_unitario": 49.00,
+      "valor_total": 49.00,
+      "b_calc_icms": 44.10,
+      "valor_icms": 5.29,
+      "valor_ipi": 0.00,
+      "aliquotas": {
+        "icms": 12.000,
+        "ipi": 0.000
+      }
+    }
+  ],
+  "calculo_issqn": {
+    "inscricao_municipal": null,
+    "valor_total_servicos": 0.00,
+    "base_calculo_issqn": 0.00,
+    "valor_issqn": 0.00
+  },
+  "dados_adicionais": {
+    "informacoes_complementares": "ENTREGA: AV ARAPONGAS, 632 C - CENTRO - ARAPONGAS / PR - CEP: 86700050\nPEDIDO: 00000000400349 CAIXA: F358795\nEMAIL: FINANCEIRO.ALMAZOKIDS@GMAIL.COM OBS: - FATURAMENTO ATACADO AUTOMÁTICO PEDIDO: 00000000400349\nDESC:1 VALOR DESCONTO: 176.500000 - NAO\nHA COBRANCA DO ADICIONAL DE ALIQUOTAS PARA O PRODUTO E/OU SERVICO COMERCIALIZADO PARA OS CODIGOS: 009402432904, 009402432906, 009402432908, 009402432910, 009402432912, 009402432914, 009402432916, 009402432918, 009402439604, 009402439606, 009402439608, 009402439610, 009402439612, 009402439614, 009402439616, 009402439618, 009403032910, 009403032912, 009403032916, 009403032918, 009444007112, 009444007114, 009444007116, 009444007118, 009473304010, 009473304012, 009473304014, 009473304016, 009473304018 VALOR DO ICMS RELATIVO AO\nFUNDO DE COMBATE A POBREZA (FCP) DA UF DE DESTINO: 0.00 VALOR DO ICMS INTERESTADUAL PARA A UF DE DESTINO: VALOR DA BC DO ICMS NA UF DE",
+    "fcp_uf_destino": 0.00,
+    "valor_icms_interestadual_uf_destino": null,
+    "valor_bc_icms_uf_destino": null,
+    "reservado_ao_fisco": null
+  }
+}

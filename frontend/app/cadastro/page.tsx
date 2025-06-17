@@ -101,7 +101,7 @@ export default function Cadastro() {
 
         <button
           type="submit"
-          className={`mt-4 w-full text-white py-2 rounded flex items-center justify-center transition-all duration-300 ${
+          className={`mt-4 w-full text-white font-semibold py-2 rounded flex items-center justify-center transition-all duration-300 ${
             sucesso ? 'bg-green-600 hover:bg-green-700' : 'bg-blue-600 hover:bg-blue-700'
           }`}
           disabled={carregando}

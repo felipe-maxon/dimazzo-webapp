@@ -7,8 +7,17 @@ const GROQ_API_KEY = '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';
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
 const MODEL = 'meta-llama/llama-4-scout-17b-16e-instruct';
 
-// Caminho da pasta
-const folderPath = 'C:\\Users\\felip\\Downloads\\DIMAZZO';
+// Caminho da pasta dependendo do dispositivo
+// NOTEBOOK--------------------------------------------------
+// const folderPath = 'C:\\Users\\felip\\Downloads\\DIMAZZO';
+// DESKTOP-------------------------------------------------------------------
+const folderPath = 'C:\\Users\\felip\\Desktop\\GITHUB_MAXON\\dimazzo-webapp';
+
+// Caminho de destino dos lotes JSON
+const outputDir = path.join(
+  'C:\\Users\\felip\\Desktop\\GITHUB_MAXON\\dimazzo-webapp\\shared',
+  'LOTES_NF'
+);
 
 // Tipos de arquivos permitidos
 const allowedExtensions = ['.jpg', '.jpeg', '.png'];
@@ -18,6 +27,7 @@ function getImageAsBase64(filePath) {
   const fileData = fs.readFileSync(filePath);
   const ext = path.extname(filePath).replace('.', '');
   const mimeType = `image/${ext === 'jpg' ? 'jpeg' : ext}`;
+  console.log(`Imagem convertida para base64 (${mimeType})`);
   return `data:${mimeType};base64,${fileData.toString('base64')}`;
 }
 
@@ -27,18 +37,41 @@ function getFirstImageFile(folderPath) {
   for (const file of files) {
     const ext = path.extname(file).toLowerCase();
     if (allowedExtensions.includes(ext)) {
+      console.log(`Imagem encontrada: ${file}`);
       return path.join(folderPath, file);
     }
   }
   return null;
 }
 
+// Salva resultado em JSON com nome baseado em data/hora
+function saveJsonToFile(jsonString) {
+  console.log("Preparando para salvar o arquivo JSON...");
+  try {
+    if (!fs.existsSync(outputDir)) {
+      console.log("Pasta LOTES_NF não encontrada. Criando...");
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
+
+    const now = new Date();
+    const timestamp = now.toISOString().replace(/[-:T]/g, '').slice(0, 15);
+    const fileName = `${timestamp}_LOTE_EXTRACAO_NF.json`;
+    const fullPath = path.join(outputDir, fileName);
+
+    fs.writeFileSync(fullPath, jsonString, 'utf8');
+    console.log(`Arquivo salvo em: ${fullPath}`);
+  } catch (err) {
+    console.error("Erro ao salvar o arquivo:", err);
+  }
+}
+
 // Chamada para a API Groq com imagem embutida
 async function callGroqWithImage(base64Image) {
+  console.log("Enviando imagens para a análise...");
   const messages = [
     {
       role: "system",
-      content: "Você é um assistente especialista em extração de dados de notas fiscais brasileiras. Analise a imagem da nota fiscal fornecida e extraia TODOS os itens/produtos listados. Para cada produto, extraia as seguintes informações: descricao, quantidade, unidade, valor_unitario e valor_total. Retorne os dados ESTRITAMENTE no seguinte formato JSON, dentro de um objeto principal chamado 'produtos': {\"produtos\": [{\"descricao\": \"string\",\"quantidade\": float,\"unidade\": \"string\",\"valor_unitario\": float,\"valor_total\": float}]}. Não inclua nenhuma explicação, introdução ou texto adicional na sua resposta. Se não encontrar nenhum produto, retorne uma lista vazia: {\"produtos\": []}."
+      content: "Você é um assistente especialista em extração de dados de notas fiscais brasileiras. Analise a imagem da nota fiscal fornecida e extraia TODOS os itens/produtos listados. Para cada produto, extraia as seguintes informações: codigo, descricao, ncm, quantidade, unidade, valor_unitario e valor_total. Retorne os dados ESTRITAMENTE no seguinte formato JSON, dentro de um objeto principal chamado 'produtos': {\"produtos\": [{\"codigo\": \"int\",\"ncm\": \"int\",\"descricao\": \"string\",\"quantidade\": float,\"unidade\": \"string\",\"valor_unitario\": float,\"valor_total\": float}]}. Não inclua nenhuma explicação, introdução ou texto adicional na sua resposta. Se não encontrar nenhum produto, retorne uma lista vazia: {\"produtos\": []}."
     },
     {
       role: "user",
@@ -71,13 +104,15 @@ async function callGroqWithImage(base64Image) {
     );
 
     const result = response.data.choices[0].message.content;
-    console.log(result);
+    console.log("Imagens analisadas com sucesso!");
+    saveJsonToFile(result);
   } catch (error) {
     console.error("Erro na chamada à API Groq:", error.response?.data || error.message);
   }
 }
 
 // Executa o processo
+console.log("Iniciando processo de extração...");
 const imagePath = getFirstImageFile(folderPath);
 if (imagePath) {
   const base64Image = getImageAsBase64(imagePath);

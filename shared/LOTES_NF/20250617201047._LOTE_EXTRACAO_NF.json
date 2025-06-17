@@ -1,0 +1,65 @@
+{"produtos": [
+    {
+        "codigo": "009402429304",
+        "ncm": "61091090",
+        "descricao": "CAMISA MINI BASICA PATCH PREMIUM",
+        "quantidade": 1.0,
+        "unidade": "UN",
+        "valor_unitario": 49.0,
+        "valor_total": 49.0
+    },
+    {
+        "codigo": "009402429305",
+        "ncm": "61091090",
+        "descricao": "CAMISA MINI BASICA PATCH PREMIUM",
+        "quantidade": 1.0,
+        "unidade": "UN",
+        "valor_unitario": 49.0,
+        "valor_total": 49.0
+    },
+    {
+        "codigo": "009402429306",
+        "ncm": "61091090",
+        "descricao": "CAMISA MINI BASICA PATCH PREMIUM",
+        "quantidade": 1.0,
+        "unidade": "UN",
+        "valor_unitario": 49.0,
+        "valor_total": 49.0
+    },
+    {
+        "codigo": "009402429307",
+        "ncm": "61091090",
+        "descricao": "CAMISA MINI BASICA PATCH PREMIUM",
+        "quantidade": 1.0,
+        "unidade": "UN",
+        "valor_unitario": 49.0,
+        "valor_total": 49.0
+    },
+    {
+        "codigo": "009402429308",
+        "ncm": "61091090",
+        "descricao": "CAMISA MINI BASICA PATCH PREMIUM",
+        "quantidade": 1.0,
+        "unidade": "UN",
+        "valor_unitario": 49.0,
+        "valor_total": 49.0
+    },
+    {
+        "codigo": "009402429309",
+        "ncm": "61091090",
+        "descricao": "CAMISA MINI BASICA PATCH PREMIUM",
+        "quantidade": 1.0,
+        "unidade": "UN",
+        "valor_unitario": 49.0,
+        "valor_total": 49.0
+    },
+    {
+        "codigo": "009402429310",
+        "ncm": "61091090",
+        "descricao": "CAMISA MINI BASICA PATCH PREMIUM",
+        "quantidade": 1.0,
+        "unidade": "UN",
+        "valor_unitario": 49.0,
+        "valor_total": 49.0
+    }
+]}
